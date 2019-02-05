@@ -1,0 +1,123 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "home",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "stop",
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Lights",
+                    "slots": [
+                        {
+                            "name": "status",
+                            "type": "STATUS"
+                        }
+                    ],
+                    "samples": [
+                        "turn {status} the lights",
+                        "turn lights {status}",
+                        "turn light {status}",
+                        "turn {status} light"
+                    ]
+                },
+                {
+                    "name": "Outlet",
+                    "slots": [
+                        {
+                            "name": "status",
+                            "type": "STATUS"
+                        }
+                    ],
+                    "samples": [
+                        "turn outlet {status}",
+                        "turn {status} outlet",
+                        "turn {status} the outlet",
+                        "turn the outlet {status}"
+                    ]
+                },
+                {
+                    "name": "Router",
+                    "slots": [
+                        {
+                            "name": "status",
+                            "type": "STATUS"
+                        }
+                    ],
+                    "samples": [
+                        "turn router {status}",
+                        "turn {status} router",
+                        "turn the router {status}",
+                        "turn {status} the router"
+                    ]
+                },
+                {
+                    "name": "Purge",
+                    "samples": [
+                        "purge",
+                        "initiate the purge",
+                        "kill it"
+                    ]
+                },
+                {
+                    "name": "Test",
+                    "samples": [
+                        "test",
+                        "potato",
+                        "brad has crabs",
+                        "three minute edwin"
+                    ]
+                },
+
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "STATUS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "off",
+                                "synonyms": [
+                                    "Off",
+                                    "low"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "on",
+                                "synonyms": [
+                                    "High",
+                                    "On"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+
+        }
+    }
+}
