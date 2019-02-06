@@ -45,7 +45,7 @@ def Gpio_Intent(status,room):
     else:
         return statement('Sorry not possible.')
 #router
- @ask.intent('Router', mapping = {'status':'status'})
+@ask.intent('Router', mapping = {'status':'status'})
 def Gpio_Intent(status,room):
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BOARD)    
