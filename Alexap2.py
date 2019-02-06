@@ -59,7 +59,7 @@ def Gpio_Intent(status,room):
 #Turns off all the lights and commands this is for testing purposes only
 @ask.intent('Purge')
 def Gpio_Intent(status,room):
-	GPIO.output(16,GPIO.LOW)
+    GPIO.output(16,GPIO.LOW)
     GPIO.output(18,GPIO.LOW)
     GPIO.output(22,GPIO.LOW)
 
@@ -67,7 +67,7 @@ def Gpio_Intent(status,room):
 #Turns on all the lights and commands this is for testing purposes only
 @ask.intent('Purge')
 def Gpio_Intent(status,room):
-	GPIO.output(16,GPIO.HIGH)
+    GPIO.output(16,GPIO.HIGH)
     GPIO.output(18,GPIO.HIGH)
     GPIO.output(22,GPIO.HIGH)
 
