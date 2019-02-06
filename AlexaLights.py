@@ -58,31 +58,6 @@ def Gpio_Intent(status,room):
         return statement('turning {} the router'.format(status))
     else:
         return statement('Sorry not possible.')
-#purge
-#Turns off all the lights and commands this is for testing purposes only
-@ask.intent('Purge')
-def Gpio_Intent(status,room):
-    GPIO.setwarnings(False)
-    GPIO.setmode(GPIO.BOARD)    
-    GPIO.setup(16,GPIO.OUT)
-    GPIO.setup(18,GPIO.OUT)
-    GPIO.setup(22,GPIO.OUT)
-    GPIO.output(16,GPIO.LOW)
-    GPIO.output(18,GPIO.LOW)
-    GPIO.output(22,GPIO.LOW)
-
-#test
-#Turns on all the lights and commands this is for testing purposes only
-@ask.intent('Test')
-def Gpio_Intent(status,room):
-    GPIO.setwarnings(False)
-    GPIO.setmode(GPIO.BOARD)    
-    GPIO.setup(16,GPIO.OUT)
-    GPIO.setup(18,GPIO.OUT)
-    GPIO.setup(22,GPIO.OUT)
-    GPIO.output(16,GPIO.HIGH)
-    GPIO.output(18,GPIO.HIGH)
-    GPIO.output(22,GPIO.HIGH)
 
 @ask.intent('AMAZON.HelpIntent')
 def help():
